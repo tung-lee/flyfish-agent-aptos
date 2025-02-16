@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts",
     "start": "tsc && node --loader ts-node/esm src/index.ts",
+    "start:gmove": "pnpm start --characters=./characters/gmove.character.json",
     "clean": "./scripts/clean.sh",
     "start:service:all": "pm2 start pnpm --name=\"all\" --restart-delay=3000 --max-restarts=10 -- run start:all",
     "stop:service:all": "pm2 stop all"
@@ -14,7 +15,6 @@
     "@elizaos/adapter-postgres": "0.1.9",
     "@elizaos/adapter-sqlite": "0.1.9",
     "@elizaos/client-auto": "0.1.9",
-    "@elizaos/client-direct": "0.1.9",
     "@elizaos/client-discord": "0.1.9",
     "@elizaos/client-telegram": "0.1.9",
     "@elizaos/client-twitter": "0.1.9",
@@ -27,6 +27,8 @@
     "@tavily/core": "0.0.2",
     "amqplib": "0.10.5",
     "better-sqlite3": "11.5.0",
+    "custom-elizaos-client-direct": "^0.1.10",
+    "elizaos-plugin-gmove": "^0.1.0",
     "fs": "0.0.1-security",
     "net": "1.0.2",
     "path": "0.12.7",
@@ -44,9 +46,9 @@
     }
   },
   "devDependencies": {
+    "pm2": "5.4.3",
     "ts-node": "10.9.2",
     "tsup": "8.3.5",
-    "typescript": "5.6.3",
-    "pm2": "5.4.3" 
+    "typescript": "5.6.3"
   }
 }

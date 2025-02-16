@@ -1,4 +1,4 @@
-import { DirectClient } from "@elizaos/client-direct";
+import { DirectClient } from "custom-elizaos-client-direct";
 import {
   AgentRuntime,
   elizaLogger,
@@ -16,6 +16,7 @@ import { fileURLToPath } from "url";
 import { initializeDbCache } from "./cache/index.ts";
 import { character } from "./character.ts";
 import { startChat } from "./chat/index.ts";
+import { analyzeSentimentAction, gmovePlugin, chatData } from "elizaos-plugin-gmove"
 import { initializeClients } from "./clients/index.ts";
 import {
   getTokenForProvider,
@@ -58,10 +59,11 @@ export function createAgent(
     plugins: [
       bootstrapPlugin,
       nodePlugin,
+      gmovePlugin,
       character.settings?.secrets?.WALLET_PUBLIC_KEY ? solanaPlugin : null,
     ].filter(Boolean),
     providers: [],
-    actions: [],
+    actions: [analyzeSentimentAction, chatData],
     services: [],
     managers: [],
     cacheManager: cache,
@@ -165,7 +167,7 @@ const startAgents = async () => {
   }
 
   const isDaemonProcess = process.env.DAEMON_PROCESS === "true";
-  if(!isDaemonProcess) {
+  if (!isDaemonProcess) {
     elizaLogger.log("Chat started. Type 'exit' to quit.");
     const chat = startChat(characters);
     chat();
