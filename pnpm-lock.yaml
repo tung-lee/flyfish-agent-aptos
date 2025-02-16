@@ -57,11 +57,11 @@ importers:
         specifier: 11.5.0
         version: 11.5.0
       custom-elizaos-client-direct:
-        specifier: ^0.1.10
-        version: 0.1.10(@google-cloud/vertexai@1.9.2(encoding@0.1.13))(@langchain/core@0.3.30(openai@4.78.1(encoding@0.1.13)(zod@3.24.1)))(@langchain/groq@0.1.3(@langchain/core@0.3.30(openai@4.78.1(encoding@0.1.13)(zod@3.24.1)))(encoding@0.1.13))(axios@1.7.9)(bufferutil@4.0.9)(encoding@0.1.13)(react@19.0.0)(sswr@2.1.0(svelte@5.18.0))(svelte@5.18.0)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)(zod@3.24.1)
+        specifier: ^0.1.11
+        version: 0.1.11(@google-cloud/vertexai@1.9.2(encoding@0.1.13))(@langchain/core@0.3.30(openai@4.78.1(encoding@0.1.13)(zod@3.24.1)))(@langchain/groq@0.1.3(@langchain/core@0.3.30(openai@4.78.1(encoding@0.1.13)(zod@3.24.1)))(encoding@0.1.13))(axios@1.7.9)(bufferutil@4.0.9)(encoding@0.1.13)(react@19.0.0)(sswr@2.1.0(svelte@5.18.0))(svelte@5.18.0)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)(zod@3.24.1)
       elizaos-plugin-gmove:
-        specifier: ^0.1.0
-        version: 0.1.0(sznu4u6wqs5mk75vabmkber6du)
+        specifier: ^0.1.1
+        version: 0.1.1(sznu4u6wqs5mk75vabmkber6du)
       fs:
         specifier: 0.0.1-security
         version: 0.0.1-security
@@ -4628,8 +4628,8 @@ packages:
   culvert@0.1.2:
     resolution: {integrity: sha512-yi1x3EAWKjQTreYWeSd98431AV+IEE0qoDyOoaHJ7KJ21gv6HtBXHVLX74opVSGqcR8/AbjJBHAHpcOy2bj5Gg==}
 
-  custom-elizaos-client-direct@0.1.10:
-    resolution: {integrity: sha512-ARFqZCIO5KaxOXDEmM+SpSpduEPeBwDRO92hdmpHPldPZkI9LnZZGovdja/pOxjJQYw+DcnikBnGV1GVoa1X3w==}
+  custom-elizaos-client-direct@0.1.11:
+    resolution: {integrity: sha512-3cHLnxjJOx+8NdroQdYPiXbe2hsrCIA27epbJ9wi83XDR5luhk1u/YczEApRaMkLLXvyOAI1PGYP9/AFpRdtVA==}
     peerDependencies:
       whatwg-url: 7.1.0
 
@@ -4912,8 +4912,8 @@ packages:
     resolution: {integrity: sha512-/RInbCy1d4P6Zdfa+TMVsf/ufZVotat5hCw3QXmWtjU+3pFEOvOQ7ibo3aIxyCJw2leIeAMjmPj+1SLJiCpdrQ==}
     engines: {node: '>=12.0.0'}
 
-  elizaos-plugin-gmove@0.1.0:
-    resolution: {integrity: sha512-8DipDfIIDQrogP6NvNqYPvjN5mj2jb0uOVn8oDIFMv8BkPXYMPuDjzlR6bwT8BNK6rQBCqBcQehwRqHShqv5uA==}
+  elizaos-plugin-gmove@0.1.1:
+    resolution: {integrity: sha512-GthNTnOZ2oBYbzK8WaNR8fAcjFh2hWsZqPnhb8zzmApT1oPNW4UCfr2hr9qqLCJV/bCBNmafq1aARfxo8ciqDQ==}
     peerDependencies:
       form-data: 4.0.1
       whatwg-url: 7.1.0
@@ -12527,7 +12527,7 @@ snapshots:
 
   '@langchain/openai@0.0.34(encoding@0.1.13)':
     dependencies:
-      '@langchain/core': 0.1.63(openai@4.78.1(encoding@0.1.13)(zod@3.24.1))
+      '@langchain/core': 0.2.36(openai@4.78.1(encoding@0.1.13)(zod@3.24.1))
       js-tiktoken: 1.0.16
       openai: 4.78.1(encoding@0.1.13)(zod@3.24.1)
       zod: 3.24.1
@@ -16792,7 +16792,7 @@ snapshots:
 
   culvert@0.1.2: {}
 
-  custom-elizaos-client-direct@0.1.10(@google-cloud/vertexai@1.9.2(encoding@0.1.13))(@langchain/core@0.3.30(openai@4.78.1(encoding@0.1.13)(zod@3.24.1)))(@langchain/groq@0.1.3(@langchain/core@0.3.30(openai@4.78.1(encoding@0.1.13)(zod@3.24.1)))(encoding@0.1.13))(axios@1.7.9)(bufferutil@4.0.9)(encoding@0.1.13)(react@19.0.0)(sswr@2.1.0(svelte@5.18.0))(svelte@5.18.0)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)(zod@3.24.1):
+  custom-elizaos-client-direct@0.1.11(@google-cloud/vertexai@1.9.2(encoding@0.1.13))(@langchain/core@0.3.30(openai@4.78.1(encoding@0.1.13)(zod@3.24.1)))(@langchain/groq@0.1.3(@langchain/core@0.3.30(openai@4.78.1(encoding@0.1.13)(zod@3.24.1)))(encoding@0.1.13))(axios@1.7.9)(bufferutil@4.0.9)(encoding@0.1.13)(react@19.0.0)(sswr@2.1.0(svelte@5.18.0))(svelte@5.18.0)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)(zod@3.24.1):
     dependencies:
       '@elizaos/core': 0.1.9(@google-cloud/vertexai@1.9.2(encoding@0.1.13))(@langchain/core@0.3.30(openai@4.78.1(encoding@0.1.13)(zod@3.24.1)))(@langchain/groq@0.1.3(@langchain/core@0.3.30(openai@4.78.1(encoding@0.1.13)(zod@3.24.1)))(encoding@0.1.13))(axios@1.7.9)(encoding@0.1.13)(react@19.0.0)(sswr@2.1.0(svelte@5.18.0))(svelte@5.18.0)(vue@3.5.13(typescript@5.6.3))
       '@types/body-parser': 1.19.5
@@ -17166,7 +17166,7 @@ snapshots:
 
   efrt@2.7.0: {}
 
-  elizaos-plugin-gmove@0.1.0(sznu4u6wqs5mk75vabmkber6du):
+  elizaos-plugin-gmove@0.1.1(sznu4u6wqs5mk75vabmkber6du):
     dependencies:
       '@aptos-labs/ts-sdk': 1.33.2
       '@elizaos/core': 0.1.9(@google-cloud/vertexai@1.9.2(encoding@0.1.13))(@langchain/core@0.3.30(openai@4.78.1(encoding@0.1.13)(zod@3.24.1)))(@langchain/groq@0.1.3(@langchain/core@0.3.30(openai@4.78.1(encoding@0.1.13)(zod@3.24.1)))(encoding@0.1.13))(axios@1.7.9)(encoding@0.1.13)(react@19.0.0)(sswr@2.1.0(svelte@5.18.0))(svelte@5.18.0)(vue@3.5.13(typescript@5.6.3))
