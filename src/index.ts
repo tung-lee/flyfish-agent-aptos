@@ -16,7 +16,7 @@ import { fileURLToPath } from "url";
 import { initializeDbCache } from "./cache/index.ts";
 import { character } from "./character.ts";
 import { startChat } from "./chat/index.ts";
-import { analyzeSentimentAction, gmovePlugin, chatData, labelData } from "elizaos-plugin-gmove"
+import { aptosPlugin, quizGen } from "custom-elizaos-plugin-aptos"
 import { initializeClients } from "./clients/index.ts";
 import {
   getTokenForProvider,
@@ -59,11 +59,11 @@ export function createAgent(
     plugins: [
       bootstrapPlugin,
       nodePlugin,
-      gmovePlugin,
+      aptosPlugin,
       character.settings?.secrets?.WALLET_PUBLIC_KEY ? solanaPlugin : null,
     ].filter(Boolean),
     providers: [],
-    actions: [analyzeSentimentAction, chatData, labelData],
+    actions: [quizGen],
     services: [],
     managers: [],
     cacheManager: cache,
