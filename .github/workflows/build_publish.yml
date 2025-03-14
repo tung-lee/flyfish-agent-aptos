@@ -27,7 +27,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: lekhacthanhtung/eliza-gmove:latest
-          labels: lekhacthanhtung/eliza-gmove:latest
+          tags: lekhacthanhtung/aptos-fly-explorer:latest
+          labels: lekhacthanhtung/aptos-fly-explorer:latest
           # tags: ${{ steps.meta.outputs.tags }}
           # labels: ${{ steps.meta.outputs.labels }}

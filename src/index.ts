@@ -1,4 +1,4 @@
-import { DirectClient } from "custom-elizaos-client-direct";
+import { DirectClient } from "custom-elizaos-client-direct-aptos";
 import {
   AgentRuntime,
   elizaLogger,
@@ -16,7 +16,7 @@ import { fileURLToPath } from "url";
 import { initializeDbCache } from "./cache/index.ts";
 import { character } from "./character.ts";
 import { startChat } from "./chat/index.ts";
-import { aptosPlugin, quizGen } from "custom-elizaos-plugin-aptos"
+import { aptosPlugin, checkVerify, createBounty, giveInsightData } from "custom-elizaos-plugin-aptos"
 import { initializeClients } from "./clients/index.ts";
 import {
   getTokenForProvider,
@@ -63,7 +63,8 @@ export function createAgent(
       character.settings?.secrets?.WALLET_PUBLIC_KEY ? solanaPlugin : null,
     ].filter(Boolean),
     providers: [],
-    actions: [quizGen],
+    // @ts-ignore
+    actions: [checkVerify, createBounty, giveInsightData],
     services: [],
     managers: [],
     cacheManager: cache,
@@ -93,6 +94,7 @@ async function startAgent(character: Character, directClient: DirectClient) {
 
     runtime.clients = await initializeClients(character, runtime);
 
+    // @ts-ignore
     directClient.registerAgent(runtime);
 
     // report to console
